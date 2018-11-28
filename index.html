@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="appContainer">
+        <h1>Scanner app</h1>
+        <form>
+            <p>Order:</p>
+            <input id="orderInput" type="text" name="firstname" placeholder=""> <br>
+            <p>Item:</p>
+            <input id="itemInput" type="text" name="lastname" placeholder="">
+        </form>
+        <!-- Div to show the scanner -->
+
+        <p id="errorNotification">error message</p>
+        <input type="button" id="startBtn" value="Start scanner" />
+        <input type="button" id="stopBtn" value="Stop scanner" />
+        <input type="button" id="clearBtn" value="Clear Input" />
+        <div id="scanner-container"></div>
+    </div>
+
+    <!-- Include the image-diff library -->
+    <script src="quagga.min.js"></script>
+    <script src="scanner.js"></script>
+
+    <script>
+
+
+    </script>
+</body>
+
+</html>

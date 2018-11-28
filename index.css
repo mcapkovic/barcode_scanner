@@ -1,0 +1,85 @@
+body {
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    color: #585856;
+    margin:0px;
+    padding: 0;
+    border: 0;
+}
+
+.appContainer h1 {
+    text-align: center;
+}
+
+#scanner-container {
+    position: relative;
+}
+
+canvas.drawing, canvas.drawingBuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.appContainer {
+    padding: 20px;
+    margin: auto;
+    width: 480px;
+}
+
+#orderInput,
+#itemInput {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#orderInput {
+    margin-bottom: 40px;
+}
+
+input[type="button"] {
+    border: none;
+    padding: 10px 27px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    border-radius: 3px;
+    /* margin: 10px 0; */
+    margin-bottom: 10px;
+}
+
+#startBtn {
+    background: #2185d0;
+    color: white;
+}
+
+#stopBtn {
+    background: #db2828;
+    color: white;
+}
+
+#startBtn:hover { 
+    background: #1e73b3;
+}
+
+#stopBtn:hover { 
+    background: #af1f1f;
+}
+
+#clearBtn:hover { 
+    background: #c7c7c7;
+}
+
+form p {
+    margin-bottom: 5px;
+}
+
+#errorNotification {
+    visibility: hidden;
+    color: red;
+    text-align: center;
+    background-color: #ffefef;
+    padding: 15px 0;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    border: 1px solid red;
+}
