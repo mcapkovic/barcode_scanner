@@ -76,9 +76,8 @@ document.getElementById("clearBtn").addEventListener("click", function () {
 });
 
 
-const validator = function (code) {
-    
-    let itemInput = document.getElementById("itemInput")
+function validator(code) {
+    let itemInput = document.getElementById("itemInput");
     let orderInput = document.getElementById("orderInput");
     let error = document.getElementById("errorNotification");
     error.style.visibility = "hidden";
@@ -86,7 +85,7 @@ const validator = function (code) {
     if (code.length === 5 && /^\d+$/.test(code)) {
         itemInput.value = code;
         itemInput.style.color = "green";
-        beepOk()
+        beepOk();
     } else if (code.length === 8 && /^[A-Za-z0-9]+$/.test(code)) {
         orderInput.value = code;
         orderInput.style.color = "green";
